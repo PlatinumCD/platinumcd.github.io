@@ -99,31 +99,35 @@
         align-items: center;
         border-bottom: black 1px solid;
         justify-content: space-around;
+        flex-direction: column;
     }
 
     .toolbar-title {
         padding: 2vw; 
         display: flex;
-        flex-direction: column;
+        padding-left: 1vw;
+        padding-right: 1vw;
+
     }
 
     .toolbar-title-text {
         color: black;
         font-family: 'Courier New', Courier, monospace;
         line-height: 1;
-        font-size: 6vw;
+        font-size: 8vw;
     }
 
     .toolbar-title-top {
-        
-    }
-
-    .toolbar-title-middle {
-        display: flex;
-        justify-content: flex-end; 
+        padding-top: 2vw;    
+        padding-left: 2vw;
+        padding-right: 2vw;
     }
 
     .toolbar-title-bottom {
+        padding-left: 2vw;
+        padding-right: 2vw;
+
+        padding-top: 2vw;    
         display: flex;
         justify-content: flex-end;
     }
@@ -131,7 +135,9 @@
     .toolbar-buttons {
         display: flex;
         height: 100%;
-        padding: 10px;
+        padding: 3vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
     }
 
     .toolbar-button {
@@ -162,7 +168,7 @@
     }
 
     .toolbar-button-logo {
-        height: 9vw;
+        height: 12vw;
     }
 
     .toolbar-wishlist-button {
