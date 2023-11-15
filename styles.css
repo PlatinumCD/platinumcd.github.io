@@ -174,5 +174,14 @@
     .toolbar-wishlist-button {
         padding-left: 5px;
     }
+
+    .main-body-textbox {
+        padding-left: 6vw;
+        padding-right: 6vw;
+        padding-top: 6vw;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1;
+    }
 }
 
