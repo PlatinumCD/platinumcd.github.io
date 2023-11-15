@@ -1,79 +1,172 @@
-body {
-    background-color: white;
-    margin: 0px;
+
+
+/* ----------- Retina Screens ----------- */
+@media only screen 
+  and (min-device-width: 441px) 
+  and (max-device-width: 1600px) {
+/*  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) */  
+
+    body {
+        background-color: blue;
+        margin: 0px;
+    }
+    .toolbar-main {
+        display: flex;
+        align-items: center;
+        border-bottom: black 1px solid;
+        justify-content: space-around;
+    }
+
+    .toolbar-title {
+        padding: 2vw; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .toolbar-title-text {
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1;
+        font-size: 3vw;
+    }
+
+    .toolbar-title-top {
+        
+    }
+
+    .toolbar-title-middle {
+        display: flex;
+        justify-content: flex-end; 
+    }
+
+    .toolbar-title-bottom {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .toolbar-buttons {
+        display: flex;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .toolbar-button {
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1;
+        margin-left: 5vw;
+        border-bottom: white 2px solid;
+        display: flex;
+        align-items: center;
+    }
+
+    a, a:hover, a:active, a:visited, a:focus {
+        text-decoration:none;
+    }
+
+    .toolbar-button-text {
+        font-size: 2.5vw;
+    }
+
+    .toolbar-button:hover {
+        border-bottom: black 2px solid;
+        cursor: pointer;
+    }
+
+    .toolbar-button:visited {
+        border-bottom: white 2px solid;
+    }
+
+    .toolbar-button-logo {
+        height: 9vw;
+    }
+
+    .toolbar-wishlist-button {
+        padding-left: 5px;
+    }
 }
 
-.toolbar-main {
-    display: flex;
-    align-items: center;
-    border-bottom: black 1px solid;
-    justify-content: space-around;
+@media only screen and (max-device-width: 440px) {
+
+    body {
+        background-color: white;
+        margin: 0px;
+    }
+
+   .toolbar-main {
+        display: flex;
+        align-items: center;
+        border-bottom: black 1px solid;
+        justify-content: space-around;
+    }
+
+    .toolbar-title {
+        padding: 2vw; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .toolbar-title-text {
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1;
+        font-size: 6vw;
+    }
+
+    .toolbar-title-top {
+        
+    }
+
+    .toolbar-title-middle {
+        display: flex;
+        justify-content: flex-end; 
+    }
+
+    .toolbar-title-bottom {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .toolbar-buttons {
+        display: flex;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .toolbar-button {
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1;
+        margin-left: 4vw;
+        border-bottom: white 2px solid;
+        display: flex;
+        align-items: center;
+    }
+
+    a, a:hover, a:active, a:visited, a:focus {
+        text-decoration:none;
+    }
+
+    .toolbar-button-text {
+        font-size: 5vw;
+    }
+
+    .toolbar-button:hover {
+        border-bottom: black 2px solid;
+        cursor: pointer;
+    }
+
+    .toolbar-button:visited {
+        border-bottom: white 2px solid;
+    }
+
+    .toolbar-button-logo {
+        height: 9vw;
+    }
+
+    .toolbar-wishlist-button {
+        padding-left: 5px;
+    }
 }
 
-.toolbar-title {
-    padding: 2vw; 
-    display: flex;
-    flex-direction: column;
-}
-
-.toolbar-title-text {
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 1;
-    font-size: 3vw;
-}
-
-.toolbar-title-top {
-    
-}
-
-.toolbar-title-middle {
-    display: flex;
-    justify-content: flex-end; 
-}
-
-.toolbar-title-bottom {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.toolbar-buttons {
-    display: flex;
-    height: 100%;
-    padding: 10px;
-}
-
-.toolbar-button {
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 1;
-    font-size: 2.5vw;
-    margin-left: 5vw;
-    border-bottom: white 2px solid;
-    display: flex;
-    align-items: center;
-}
-
-a, a:hover, a:active, a:visited, a:focus {
-    text-decoration:none;
-}
-
-.toolbar-button-text {
-}
-
-.toolbar-button:hover {
-    border-bottom: black 2px solid;
-    cursor: pointer;
-}
-
-.toolbar-button:visited {
-    border-bottom: white 2px solid;
-}
-
-.toolbar-button-logo {
-    height: 9vw;
-}
-
-.toolbar-wishlist-button {
-    padding-left: 5px;
-}
