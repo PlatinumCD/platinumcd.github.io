@@ -8,7 +8,7 @@
   and (min-resolution: 192dpi) */  
 
     body {
-        background-color: blue;
+        background-color: white;
         margin: 0px;
     }
     .toolbar-main {
@@ -66,7 +66,7 @@
     }
 
     .toolbar-button-text {
-        font-size: 2.5vw;
+        font-size: calc(1em + 1vw) ;
     }
 
     .toolbar-button:hover {
@@ -79,12 +79,43 @@
     }
 
     .toolbar-button-logo {
-        height: 9vw;
+        height: 4vw;
     }
 
     .toolbar-wishlist-button {
         padding-left: 5px;
     }
+
+    .main-body-textbox {
+        padding-left: 6vw;
+        padding-right: 6vw;
+        padding-top: calc(1em + 1vw) ;
+        font-size: calc(1em + 1vw) ;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1;
+    }
+
+    .main-body-table-holder {
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1;
+        display:flex;
+        justify-content: center;
+        padding: 4vw;
+        flex-direction: column;
+        font-size: 1.3vw;
+        align-items: center
+    }
+
+    .main-body-table-row {
+        border-bottom: black 1px solid;
+        padding: 2vw;
+        display: flex;
+        width: 75%;
+        justify-content: space-between;
+    }
+
 }
 
 @media only screen and (max-device-width: 440px) {
