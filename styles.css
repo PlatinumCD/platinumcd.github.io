@@ -1,0 +1,50 @@
+body {
+    background-color: white;
+    margin: 0px;
+}
+
+.toolbar-main {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.toolbar-title {
+    padding: 4px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar-title-text {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1;
+    font-size: 1.5em;
+}
+
+.toolbar-title-top {
+    
+}
+
+.toolbar-title-bottom {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toolbar-buttons {
+    display: flex;
+    height: 100%;
+    padding: 8px;
+}
+
+.toolbar-button {
+    padding: 12px;
+    padding-left: 15px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1;
+    font-size: 1em;
+
+}
