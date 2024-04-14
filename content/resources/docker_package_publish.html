@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cameron F. Durbin</title>
+        <link rel="stylesheet" type="text/css" href="https://www.cameronfdurbin.com/styles.css">
+    </head>
+    <body>
+        <main>
+            <div class="main-body">
+                <div class="main-body-textbox main-body-intro">
+                    Dockerhub Packaging and Publishing
+                </div>
+                <div class="main-body-small-textbox">
+                    <h3 id="producing-multi-architecture-repos-on-hub.docker.com">Producing
+                        multi-architecture repos on hub.docker.com</h3>
+                    <p>For this guild, I’ll be using an <strong>AMD64</strong> and
+                    <strong>ARM64</strong> architecture for a project named
+                    <strong>my-project</strong>. I’ll be using the hub.docker username:
+                    <code>red</code>.</p>
+                    <h4 id="create-repos-for-each-target-architecture">1. Create repos for
+                        each target architecture</h4>
+                    <p>Create the images with the tag names:</p>
+                    <ul>
+                        <li>red/my-project-amd64</li>
+                        <li>red/my-project-arm64</li>
+                    </ul>
+                    <h4 id="build-the-images-locally">2. Build the images locally</h4>
+                    <p><strong>AMD64</strong></p>
+                    <pre><code>docker build \
+ --tag red/my-project-amd64:latest \
+ --platform linux/amd64 .</code></pre>
+                    <p><strong>ARM64</strong></p>
+                    <pre><code>docker build \
+ --tag red/my-project-arm64:latest \
+ --platform linux/arm64/v8 .</code></pre>
+                    <h4 id="push-the-images">3. Push the images</h4>
+                    <p><strong>AMD64</strong></p>
+                    <pre><code>docker push red/my-project-amd64:latest</code></pre>
+                    <p><strong>ARM64</strong></p>
+                    <pre><code>docker push red/my-project-arm64:latest</code></pre>
+                    <h4 id="create-manifest">4. Create manifest</h4>
+                    <pre><code>docker manifest create red/my-project:latest \
+    red/my-project-arm64:latest \
+    red/my-project-amd64:latest</code></pre>
+                    <h4 id="push-manifest">5. Push manifest</h4>
+                    <pre><code>docker manifest push red/my-project:latest</code></pre>
+
+                </div>
+
+        </main>
+
+        <footer>
+        </footer>
+    </body>
+</html>

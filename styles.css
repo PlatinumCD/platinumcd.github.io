@@ -96,6 +96,17 @@
         line-height: 1;
     }
 
+    .main-body-small-textbox {
+        padding-left: 6vw;
+        padding-right: 6vw;
+        padding-top: calc(1em + 1vw) ;
+        font-size: calc(0.5em + 0.5vw) ;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1;
+    }
+
+
     .main-body-table-holder {
         color: black;
         font-family: 'Courier New', Courier, monospace;
@@ -216,10 +227,17 @@
         padding-left: 5px;
     }
 
-    .main-body-textbox {
+    .main-body-small-textbox {
         padding-left: 6vw;
         padding-right: 6vw;
         padding-top: 6vw;
+        font-size: calc(0.5em + 0.5vw) ;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1;
+    }
+
+
         color: black;
         font-family: 'Courier New', Courier, monospace;
         line-height: 1;
@@ -229,7 +247,6 @@
         color: black;
         font-family: 'Courier New', Courier, monospace;
         line-height: 1;
-
         display:flex;
         justify-content: center;
         padding: 4vw;
